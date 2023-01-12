@@ -109,6 +109,7 @@ resource "aws_elasticache_parameter_group" "default" {
     ignore_changes = [
       description,
     ]
+    create_before_destroy = true
   }
 }
 
